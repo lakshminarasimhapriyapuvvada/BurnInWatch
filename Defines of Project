@@ -1,0 +1,54 @@
+Your system needs burn-in testing data.
+For example:
+Component ID
+Timestamp
+Voltage
+Current
+Temperature
+Resistance
+Leakage Current
+Power
+
+
+A CSV could look like:
+
+Component_ID,Time,Voltage,Current,Temperature,Resistance,Leakage
+C001,0,5.01,0.98,30.1,10.1,0.02
+C001,1,5.01,0.99,30.5,10.1,0.02
+C001,2,5.00,0.98,31.0,10.0,0.02
+C001,3,5.01,0.99,31.2,10.1,0.03
+
+C002,0,5.00,1.00,30.2,10.0,0.02
+C002,1,5.02,1.01,31.4,9.9,0.03
+C002,2,5.03,1.03,34.0,9.8,0.04
+C002,3,5.05,1.05,38.5,9.6,0.07
+
+
+Step 2 — Obtain/create the dataset
+This is your first actual coding task.
+You have two possibilities.
+Option A — Real data
+Find a suitable burn-in/electronic component dataset.
+Option B — Synthetic data
+For your college project, I recommend initially creating a realistic synthetic dataset.
+Why?
+Because your problem specifically requires:
+- normal components
+- gradual degradation
+- noisy measurements
+- abnormal behavior
+A generic dataset won't necessarily contain those patterns.
+We can create something like:
+
+1000 components
+×
+50 time points
+×
+6 measurements
+
+That's:
+50,000 observations.
+Then create:
+90% → normal
+7%  → gradual degradation
+3%  → abnormal behavior

@@ -1,0 +1,33 @@
+dir
+python -m venv venv
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter openpyxl joblib streamlit
+dir data
+python app.py
+
+python app.py
+streamlit run changed.py
+
+((Then it will continue through))
+DATASET INFORMATION
+        ↓
+MISSING VALUES
+        ↓
+IDENTIFYING IMPORTANT COLUMNS
+        ↓
+EXPLORATORY DATA ANALYSIS
+        ↓
+BURN-IN TIME-SERIES ANALYSIS
+        ↓
+FEATURE ENGINEERING
+        ↓
+PCA
+        ↓
+ISOLATION FOREST
+        ↓
+LOCAL OUTLIER FACTOR
+        ↓
+ONE-CLASS SVM
+        ↓
+MODEL COMPARISON
+        ↓
+FINAL RESULTS
